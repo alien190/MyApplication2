@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Приложуха</string>
+    <string name="CheckBox1">Переключалка</string>
+    <string name="CheckBox1On">Переключалка включена</string>
+    <string name="CheckBox1Off">Переключалка выключена</string>
+    <string name="preference_file_key">com.example.ivanovnv.myapplication.PREFERENCE_FILE_KEY</string>
+</resources>
