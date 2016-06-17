@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
         if(ControlSwitch.isChecked())
         {
-            TextFiled.setText("Checked_");
+            TextFiled.setText("Checked__");
             Drawable drawable= getResources().getDrawable(R.drawable.img2,null);
             imgView.setImageDrawable(drawable);
 
         }
         else
         {
-            TextFiled.setText("Not checked_");
+            TextFiled.setText("Not checked__");
             Drawable drawable = imgView.getDrawable();
             imgView.setImageDrawable(null);
         }
