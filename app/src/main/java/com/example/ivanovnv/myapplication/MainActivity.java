@@ -54,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref = getSharedPreferences(
                 getString(R.string.preference_file_key), Context.MODE_PRIVATE);
         TextFiled.setText(sharedPref.getString("TextField1","start"));
+        ControlSwitch.setChecked(sharedPref.getBoolean("switch1",false));
+
+
+        if(ControlSwitch.isChecked())
+        {
+            ImageView imgView=(ImageView) findViewById(R.id.imageView);
+            Drawable drawable= getResources().getDrawable(R.drawable.img2,null);
+            imgView.setImageDrawable(drawable);
+        }
+
 
     }
 
@@ -65,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 getString(R.string.preference_file_key), Context.MODE_PRIVATE);
         SharedPreferences.Editor ed = sharedPref.edit();
         ed.putString("TextField1", (String)TextFiled.getText());
-
+        ed.putBoolean("switch1",ControlSwitch.isChecked());
         ed.commit();
     }
 }
