@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             TextFiled.setText("Not checked__");
-            Drawable drawable = imgView.getDrawable();
-            imgView.setImageDrawable(null);
+            Drawable drawable = getResources().getDrawable(R.drawable.img,null);
+            imgView.setImageDrawable(drawable);
         }
     }
 
